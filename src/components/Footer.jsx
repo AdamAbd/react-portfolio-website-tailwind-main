@@ -6,47 +6,53 @@ import email from "../assets/socials/sms.png";
 
 const Footer = () => {
   return (
-    <div className="md:px-10 px-7 mt-24">
-      <div className="text-white opacity-50 flex flex-col md:flex-row justify-between items-center my-5">
-        <p>@ Copyright 2022 | Willie Garrett</p>
-        <p className="hidden sm:block">Fullstack Developer</p>
-        <p className="hidden sm:block">UI Designer</p>
-        <p className="hidden sm:block">Data Analyst</p>
-        <p className="hidden sm:block">Designed by @ernestechie</p>
-      </div>
-      {/* social media */}
-      <div className="flex mb-5 justify-center md:justify-start ">
-        <a
-          href="https://www.linkedin.com/in/joshua-harris-321a24190/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={facebook} alt="" />
-        </a>
-        <a
-          className="ml-4"
-          href="https://github.com/joshua-harris"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={instagram} alt="" />
-        </a>
-        <a
-          className="ml-4"
-          href="mailto:anpch@example.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={dribbble} alt="" />
-        </a>
-        <a
-          className="ml-4"
-          href="mailto:anpch@example.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={email} alt="" />
-        </a>
+    <div className="container mx-auto py-10">
+      <div className="bg-[#1C1C22] p-6 md:px-10 rounded-xl flex flex-col">
+        <div className="flex flex-col md:flex-row gap-6 justify-between">
+          <a
+            href="https://flowbite.com/"
+            className="text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            Adam Abd.
+          </a>
+          <div className="flex flex-row items-center gap-6">
+            <span className="text-white">Follow me</span>
+            <div className="flex flex-row gap-3">
+              <a
+                href="https://www.linkedin.com/in/joshua-harris-321a24190/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={facebook} alt="" />
+              </a>
+              <a
+                href="https://github.com/joshua-harris"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={instagram} alt="" />
+              </a>
+              <a
+                href="mailto:anpch@example.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={dribbble} alt="" />
+              </a>
+              <a
+                href="mailto:anpch@example.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={email} alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div className="w-full h-1 rounded-full bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 mt-6 mb-4" />
+        <p className="text-[#F0F2F5] text-xs text-end">
+          © Designed by Adam Abd.
+        </p>
       </div>
     </div>
   );

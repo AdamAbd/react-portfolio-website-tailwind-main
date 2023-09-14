@@ -1,9 +1,4 @@
 import React, { useState } from "react";
-import {
-  BookOpenIcon,
-  Bars3BottomRightIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/solid";
 import { Link, ScrollLink } from "react-scroll";
 
 const Header = () => {
@@ -18,23 +13,21 @@ const Header = () => {
   return (
     <nav className="bg-scaffold fixed w-full z-20 top-0 left-0">
       <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
-        <a href="https://flowbite.com/" className="flex items-center">
-          <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            className="h-8 mr-3"
-            alt="Flowbite Logo"
-          />
-          <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Flowbite
-          </span>
+        <a
+          href="https://flowbite.com/"
+          className="text-2xl font-semibold whitespace-nowrap dark:text-white"
+        >
+          Adam Abd.
         </a>
         <div className="flex md:order-2">
-          <button
-            type="button"
+          <a
+            href="https://www.upwork.com/freelancers/~01554cc98ccc5eb306"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
             Hire me
-          </button>
+          </a>
           <button
             type="button"
             onClick={() => setOpen(!open)}

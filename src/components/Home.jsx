@@ -27,9 +27,14 @@ const Home = () => {
           seamless web experiences for end-users.
         </p>
         <div className="mt-7 flex flex-row gap-5">
-          <button className="bg-[#F0F2F5] py-3 px-7 rounded-3xl text-[#161513] text-sm md:text-base">
+          <a
+            href="https://resume.io/r/3dk7AQhsx"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-[#F0F2F5] py-3 px-7 rounded-3xl text-[#161513] text-sm md:text-base"
+          >
             See My Resume
-          </button>
+          </a>
           <button className="py-3 px-7 rounded-3xl border border-[#F0F2F5] text-[#F0F2F5] text-sm md:text-base">
             View All Projects
           </button>
