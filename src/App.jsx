@@ -1,4 +1,4 @@
-import "./App.css";
+// import "./App.css";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -8,16 +8,14 @@ import Projects from "./components/Projects";
 
 function App() {
   return (
-    <>
-      <div className="container mx-auto">
-        <Header />
-        <Home />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
-      </div>
-    </>
+    <div className="bg-scaffold">
+      <Header />
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </div>
   );
 }
 

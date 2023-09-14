@@ -1,34 +1,42 @@
-import React from 'react';
-import Img from '../assets/Willie.png'
-import circle from '../assets/circle.png'
-import img2 from '../assets/img2.png'
+import React from "react";
+import avatar from "../assets/avatar.png";
 
 const Home = () => {
-    return (
-        <div className='md:px-10 px-7 my-14 md:h-screen bg-[#1a1a29]' id='home'>
-            <div>
-                <div className='flex flex-col md:flex-row items-center justify-between w-full'>
-                    {/* image & content */}
-                    {/* text */}
-                    <div className='text-white'>
-                        <h6 className='text-3xl mt-12'>Hello, I'm</h6>
-                        <h1 className='font-semibold md:text-5xl my-4 text-3xl'>Willie Garrett</h1>
-                        <p className='md:w-96'>Freelance UI designer, Fullstack developer, & Data Miner. I create seamless web experiences for end-users.</p>
-                        <div className='mt-5'>
-                            <button className='btn transition-all duration-500 bg-primary py-2 px-4 rounded text-white hover:bg-white hover:text-primary'>About me</button> 
-                            <button className='btn outline py-1.5 px-6 rounded border-none ml-5 text-white '>Projects</button>
-                        </div>
-                    </div>
-                    {/* img */}
-                    <div className='order-first md:order-last relative'>
-                        <img src={img2} alt="" />
-                    </div>
-                </div>
-            </div>
-            <div className='h-24 bg-[#181824] w-full mx-auto absolute left-0 hidden md:block'>
-            </div>
+  return (
+    <div
+      className="container mx-auto items-center flex text-white h-screen"
+      id="home"
+    >
+      <div className="flex flex-col items-center justify-between w-full">
+        {/* img */}
+        <img
+          src={avatar}
+          alt="Avatar Adam"
+          className="w-56 h-56 rounded-full object-cover bg-[#F0F2F5]"
+        />
+        {/* image & content */}
+        {/* text */}
+        <h1 className="md:w-[640px] my-7 font-semibold text-3xl md:text-5xl text-center leading-10 md:leading-tight">
+          <b className="font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400">
+            Hello, I'm Adam,
+          </b>{" "}
+          fullstack developer based in Indonesia.
+        </h1>
+        <p className="md:w-[500px] text-center">
+          Freelance UI designer, Fullstack developer, & Data Miner. I create
+          seamless web experiences for end-users.
+        </p>
+        <div className="mt-7 flex flex-row gap-5">
+          <button className="bg-[#F0F2F5] py-3 px-7 rounded-3xl text-[#161513] text-sm md:text-base">
+            See My Resume
+          </button>
+          <button className="py-3 px-7 rounded-3xl border border-[#F0F2F5] text-[#F0F2F5] text-sm md:text-base">
+            View All Projects
+          </button>
         </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default Home;

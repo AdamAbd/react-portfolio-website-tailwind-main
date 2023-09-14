@@ -1,6 +1,8 @@
 import React from "react";
 import Services from "./Services";
 
+import adam from "../assets/adam.jpeg";
+
 const About = () => {
   const skills = [
     { name: "UI & UX DESIGNING", image: "/src/assets/icons/ruler-pen.png" },
@@ -12,24 +14,36 @@ const About = () => {
     },
   ];
   return (
-    <div className="md:px-10 px-7 sm:-mt-24" id="about">
-      <h1 className="text-primary font-semibold text-3xl mt-5">About me:</h1>
-      <p className="my-3 text-white md:w-2/3 leading-[2]">
-        Hi, my name is Willie Garrett, i am a Fullstack web developer, UI
-        designer, and Mobile developer. I jhave honed my skills in Web
-        Development and advance i have core understanding of advance UI design
-        principles. Here are the major skiills i have.
-      </p>
-      <div className="md:flex my-7 items-center">
-        <div className="text-primary text-8xl font-bold">5+</div>
-        <p className="text-white text-2xl md:ml-5">
-          Years of experience. Specialised in building apps, while ensuring a
-          seamless web experience for end users.
-        </p>
+    <div className="container mx-auto" id="about">
+      <div className="flex flex-col md:flex-row gap-10">
+        <img
+          src={adam}
+          alt="Foto Adam"
+          className="w-64 md:w-80 h-64 md:h-80 rounded-xl object-cover"
+        />
+        <div>
+          <h2 className="text-purple-500 font-semibold text-2xl md:text-3xl">
+            About me:
+          </h2>
+          <h3 className="text-lg md:text-2xl text-white mt-3">
+            I'm creative, flexible, open and like to find alternative solutions
+            to solve existing problems. As a creative thinker, proficient &
+            working with various technologies. Here are the service i have :
+          </h3>
+          <div className="md:flex my-7 items-center">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 text-8xl font-bold">
+              3+
+            </div>
+            <h3 className="text-white text-2xl md:ml-5">
+              Years of experience. Specialised in building apps, while ensuring
+              a seamless web experience for end users.
+            </h3>
+          </div>
+        </div>
       </div>
 
       {/* skills */}
-      <div className="flex flex-col md:flex-row ">
+      {/* <div className="flex flex-col md:flex-row ">
         {skills.map((skill, index) => (
           <div
             key={index}
@@ -41,10 +55,10 @@ const About = () => {
             </p>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* services section */}
-      <Services/>
+      <Services />
     </div>
   );
 };

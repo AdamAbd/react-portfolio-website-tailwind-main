@@ -22,11 +22,11 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="md:px-10 px-7 my-8" id="projects">
-      <h1 className="text-primary font-semibold text-3xl mt-16">
+    <div className="container mx-auto my-8" id="projects">
+      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-semibold text-3xl mt-16">
         Featured projects:
       </h1>
-      <p className="my-3 text-white md:w-3/4 leading-[2]">
+      <p className="my-3 text-white">
         I have worked on many projects over the course of being a Web Developer,
         here are a few of my live, real-world projects
       </p>

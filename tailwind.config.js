@@ -8,13 +8,21 @@ export default {
     fontFamily: {
       primary: 'Poppins',
     },
+    container: {
+      padding: {
+        DEFAULT: '2rem',
+        sm: '4rem',
+        md: '4rem',
+      },
+    },
     extend: {
       colors: {
         primary: '#7562E0',
-        Secondary:'#282162',
-        tertiary:'#848191',
-        light:'#BDBDBD',
+        Secondary: '#282162',
+        tertiary: '#848191',
+        light: '#BDBDBD',
         dark: '#000036',
+        scaffold: '#161513'
       }
     },
   },
