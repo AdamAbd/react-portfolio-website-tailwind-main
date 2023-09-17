@@ -1,22 +1,26 @@
 import React from "react";
 
+import android from "../assets/icons/android.png";
+import code from "../assets/icons/code.png";
+import design from "../assets/icons/ruler-pen.png";
+
 const services = [
   {
     name: "MOBILE DEVELOPMENT",
     description:
       "I am an expert mobile developer. I have experience using Flutter and React Native.",
-    image: "../src/assets/icons/android.png",
+    image: android,
   },
   {
     name: "WEB DEVELOPMENT",
     description:
       "I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS",
-    image: "../src/assets/icons/code.png",
+    image: code,
   },
   {
     name: "UI & UX DESIGNING",
     description: "I design beautiful web iterfaces with Figma",
-    image: "../src/assets/icons/ruler-pen.png",
+    image: design,
   },
 ];
 
