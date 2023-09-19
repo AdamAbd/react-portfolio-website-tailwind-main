@@ -14,14 +14,9 @@ function ParticleBg() {
 
   return (
     <Particles
-      className="fixed top-0 left-0 w-screen h-screen z-[-1] bg-red-50"
       id="particles-here"
       init={particlesInit}
       options={{
-        // fullScreen: {
-        //   zIndex: -1,
-        //   enable: true,
-        // },
         background: {
           color: {
             value: "#0d47a1",
