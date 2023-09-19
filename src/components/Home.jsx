@@ -5,7 +5,7 @@ import ParticleBg from "./ParticleBg";
 const Home = () => {
   return (
     <div className="relative flex h-screen">
-      {/* <ParticleBg /> */}
+      <ParticleBg />
       <div
         className="absolute z-20 container mx-auto items-center flex text-white h-screen"
         id="home"
