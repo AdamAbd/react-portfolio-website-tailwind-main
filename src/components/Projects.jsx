@@ -4,6 +4,7 @@ import ecohero from "../assets/projects/eco_hero.svg";
 import emagz from "../assets/projects/emagz.svg";
 import xaabee from "../assets/projects/xaabee.svg";
 import rwoods from "../assets/projects/3rwoods.svg";
+import Title from "./Title";
 
 const Projects = () => {
   const projects = [
@@ -41,10 +42,8 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="container mx-auto my-8" id="projects">
-      <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-semibold text-3xl mt-16">
-        Featured projects:
-      </h2>
+    <div className="container mx-auto my-16" id="projects">
+      <Title title="Projects." />
 
       {/* featured projects */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-6 items-start justify-center">
@@ -69,15 +68,12 @@ const Projects = () => {
               <div className="flex flex-row mt-3 gap-3 md:gap-2.5">
                 {project.tags.map((data, index) => {
                   return (
-                    <a
+                    <div
                       key={index}
-                      href="https://www.upwork.com/freelancers/~01554cc98ccc5eb306"
-                      target="_blank"
-                      rel="noopener noreferrer"
                       className="text-white border font-medium rounded-3xl text-sm px-4 py-1.5 text-center"
                     >
                       {data}
-                    </a>
+                    </div>
                   );
                 })}
               </div>
