@@ -51,7 +51,7 @@ const Projects = () => {
           return (
             <div key={index} className="flex flex-col shadow-sm">
               <img src={project.photo} alt={project.title} />
-              <div className="flex flex-row justify-between items-center mt-5">
+              <div className="flex flex-row justify-between items-center my-6">
                 <h3 className="text-primary font-semibold text-3xl">
                   {project.title}
                 </h3>
@@ -61,16 +61,16 @@ const Projects = () => {
                   rel="noopener noreferrer"
                   className="w-28 py-1.5 rounded-3xl border-none text-center text-white bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400"
                 >
-                  {"See Live >"}
+                  See Live
                 </a>
               </div>
-              <p className=" text-white mt-3">{project.description}</p>
+              <p className=" text-white">{project.description}</p>
               <div className="flex flex-row mt-3 gap-3 md:gap-2.5">
                 {project.tags.map((data, index) => {
                   return (
                     <div
                       key={index}
-                      className="text-white border font-medium rounded-3xl text-sm px-4 py-1.5 text-center"
+                      className="text-white border font-medium rounded-3xl text-sm px-4 py-1.5 text-center items-center flex"
                     >
                       {data}
                     </div>

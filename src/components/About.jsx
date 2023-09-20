@@ -1,5 +1,4 @@
 import React from "react";
-import Services from "./Services";
 
 import adam from "../assets/adam.jpeg";
 import Title from "./Title";
@@ -16,7 +15,7 @@ const services = [
     image: android,
   },
   {
-    name: "WEB DEVELOPMENT",
+    name: "FULLSTACK DEVELOPMENT",
     description:
       "I create beautiful iterfaces with simple HTML, CSS, & JavaScript and also frameworks like Angular and ReactJS",
     image: code,
@@ -42,22 +41,22 @@ function About() {
           <h3 className="text-lg md:text-2xl text-white mt-3">
             I'm creative, flexible, open and like to find alternative solutions
             to solve existing problems. As a creative thinker, proficient &
-            working with various technologies. Here are the service i have :
+            working with various technologies. Here are service that i offers :
           </h3>
-          <div className="md:flex my-7 items-center">
-            <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 text-8xl font-bold">
+          <div className="flex flex-row mt-7 items-start md:items-center gap-3">
+            <div className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 text-7xl md:text-8xl font-bold">
               3+
             </div>
-            <h3 className="text-white text-2xl md:ml-5">
+            <h3 className="text-white text-base md:text-2xl md:ml-5">
               Years of experience. Specialised in building apps, while ensuring
-              a seamless web experience for end users.
+              a seamless UX for end users.
             </h3>
           </div>
         </div>
       </div>
 
       {/* services section */}
-      <div className="mt-14">
+      <div className="mt-10">
         <Title title="Services." isCenter />
         <div className="grid md:grid-cols-3 mt-8 gap-5">
           {services.map((service, index) => (
@@ -66,8 +65,8 @@ function About() {
               className="relative h-52 p-1 rounded-2xl bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400"
             >
               <div className="bg-scaffold w-full h-full flex flex-col justify-end items-start rounded-xl p-4">
-                <img src={service.image} alt="" className="mb-3" />
-                <h3 className="text-2xl text-white">{service.name}</h3>
+                <img src={service.image} alt="" className="w-12 h-12 mb-3" />
+                <h3 className="text-xl text-white">{service.name}</h3>
               </div>
             </div>
           ))}
