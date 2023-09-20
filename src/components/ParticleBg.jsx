@@ -14,17 +14,16 @@ function ParticleBg() {
 
   return (
     <Particles
-      className="fixed top-0 left-0 w-screen h-screen z-[-1] bg-red-50"
+      className="h-screen"
       id="particles-here"
       init={particlesInit}
       options={{
-        // fullScreen: {
-        //   zIndex: -1,
-        //   enable: true,
-        // },
+        fullScreen: {
+          enable: false,
+        },
         background: {
           color: {
-            value: "#0d47a1",
+            value: "#161513",
           },
         },
         fpsLimit: 120,
@@ -68,7 +67,7 @@ function ParticleBg() {
               default: "bounce",
             },
             random: false,
-            speed: 6,
+            speed: 2,
             straight: false,
           },
           number: {
@@ -76,7 +75,7 @@ function ParticleBg() {
               enable: true,
               area: 800,
             },
-            value: 80,
+            value: 40,
           },
           opacity: {
             value: 0.5,

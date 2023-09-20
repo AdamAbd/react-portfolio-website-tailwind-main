@@ -1,64 +1,57 @@
 import React from "react";
 
+import emagz from "../assets/projects/emagz.svg";
+import xaabee from "../assets/projects/xaabee.svg";
+import rwoods from "../assets/projects/3rwoods.svg";
+
 const Projects = () => {
   const projects = [
     {
-      title: "TWINDER",
+      title: "Emagz",
       description:
-        "A live Geolocation app for finding tweets and twitter users around you.",
-      photo: "/src/assets/projects/img1.png",
+        "Emagz.mobi is a place where users can read exclusive and premium magazines worldwide. With a great variety of magazines from over 300 content just for users.",
+      photo: emagz,
+      link: "https://demo.emagz.mobi/en",
     },
     {
-      title: "LIVENTS",
+      title: "Xaabee",
       description:
-        "A video streaming app with live Geolocation, for streaming events.",
-      photo: "/src/assets/projects/img2.png",
+        "A place where students meet to help each other. Fast and accurate answer to the questioner. Pocket money for those who help answer. Download now!",
+      photo: xaabee,
+      link: "https://xaabee.com",
     },
     {
-      title: "MOOVE",
+      title: "3R Woods",
       description:
-        "Mobile app for booking instant pickup & dropoff accross major cities.",
-      photo: "/src/assets/projects/img3.png",
+        "Best Wood and Coconut Product Quality From Indonesia To the World",
+      photo: rwoods,
+      link: "https://3rwoods.adamabd.my.id/",
     },
   ];
   return (
     <div className="container mx-auto my-8" id="projects">
-      <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-semibold text-3xl mt-16">
+      <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-semibold text-3xl mt-16">
         Featured projects:
-      </h1>
-      <p className="my-3 text-white">
-        I have worked on many projects over the course of being a Web Developer,
-        here are a few of my live, real-world projects
-      </p>
+      </h2>
       {/* featured projects */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 my-6 items-center justify-center">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 my-6 items-start justify-center">
         {projects.map((project, index) => {
           return (
-            <div
-              key={index}
-              className="flex flex-col shadow-sm md:w-[343px] bg-[#31313F] p-4 rounded"
-            >
-              <a
-                href={project.photo}
-                target="_blank"
-                rel="noreferrer"
-                className="mb-4"
-              >
-                <img src={project.photo} alt={project.title} />
-              </a>
-              <h3 className="text-primary font-semibold text-lg">
+            <div key={index} className="flex flex-col shadow-sm">
+              <img src={project.photo} alt={project.title} />
+              <h3 className="text-primary font-semibold text-2xl">
                 {project.title}
               </h3>
-              <p className=" text-white mt-1">{project.description}</p>
-              <div className="mt-5">
-                <button className="btn transition-all duration-500 bg-primary py-2 px-6 rounded text-white hover:bg-white hover:text-primary">
-                  About me
-                </button>
-                <button className="btn outline py-1.5 px-9 rounded border-none ml-5 text-white ">
-                  Projects
-                </button>
-              </div>
+              <p className=" text-white mt-2">{project.description}</p>
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="outline w-32 py-2 rounded-3xl border-none mt-5 text-center text-white "
+              >
+                {"See Live >"}
+              </a>
             </div>
           );
         })}

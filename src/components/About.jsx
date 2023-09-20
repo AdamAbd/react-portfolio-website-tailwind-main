@@ -14,7 +14,7 @@ const About = () => {
     },
   ];
   return (
-    <div className="container mx-auto" id="about">
+    <div className="container mx-auto my-20" id="about">
       <div className="flex flex-col md:flex-row gap-10">
         <img
           src={adam}

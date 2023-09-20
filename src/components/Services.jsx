@@ -30,7 +30,7 @@ const Services = () => {
       <h2 className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-semibold text-3xl mt-14">
         The services i offer:
       </h2>
-      <div className="grid md:grid-cols-3 my-8 gap-5">
+      <div className="grid md:grid-cols-3 mt-8 gap-5">
         {services.map((service, index) => (
           <div
             key={index}
