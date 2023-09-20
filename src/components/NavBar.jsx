@@ -1,8 +1,24 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, ScrollLink } from "react-scroll";
 
-const Header = () => {
+const NavBar = () => {
   let [open, setOpen] = useState(false);
+  const [show, setShow] = useState(true);
+
+  const controlNavBar = () => {
+    if (window.scrollY > 200) {
+      setShow(false);
+    } else {
+      setShow(true);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", controlNavBar);
+    return () => {
+      window.removeEventListener("scroll", controlNavBar);
+    };
+  }, []);
 
   let links = [
     { name: "About me", link: "about" },
@@ -11,7 +27,11 @@ const Header = () => {
   ];
 
   return (
-    <nav className="bg-transparent fixed w-full z-20 top-0 left-0">
+    <nav
+      className={`fixed w-full z-30 top-0 left-0 transition-all duration-150 ease-in-out ${
+        show ? "bg-transparent" : "bg-scaffold"
+      }`}
+    >
       <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
         <a
           href="https://flowbite.com/"
@@ -80,4 +100,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;
