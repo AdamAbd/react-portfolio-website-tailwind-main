@@ -1,5 +1,6 @@
 import React from "react";
 
+import gatuko from "../assets/projects/gatuko.png";
 import ecohero from "../assets/projects/eco_hero.svg";
 import emagz from "../assets/projects/emagz.svg";
 import xaabee from "../assets/projects/xaabee.svg";
@@ -8,6 +9,14 @@ import Title from "./Title";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "Gatuko",
+      description:
+        "Eco Hero is a Gamification-Based Mobile Application as an Innovative and Creative Solution to Overcoming Air Pollution Problems in Indonesia.",
+      photo: gatuko,
+      link: "https://gatuko-web.vercel.app/",
+      tags: ["Electron JS", "React JS", "Tailwind CSS"],
+    },
     {
       title: "Eco Hero",
       description:
@@ -50,7 +59,11 @@ const Projects = () => {
         {projects.map((project, index) => {
           return (
             <div key={index} className="flex flex-col shadow-sm">
-              <img src={project.photo} alt={project.title} />
+              <img
+                src={project.photo}
+                alt={project.title}
+                className="w-full object-cover"
+              />
               <div className="flex flex-row justify-between items-center my-6">
                 <h3 className="text-primary font-semibold text-3xl">
                   {project.title}
