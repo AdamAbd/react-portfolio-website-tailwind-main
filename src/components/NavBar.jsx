@@ -21,7 +21,7 @@ const NavBar = () => {
   }, []);
 
   let links = [
-    { name: "About me", link: "about" },
+    { name: "About", link: "about" },
     { name: "Projects", link: "projects" },
     { name: "Contact", link: "contact" },
   ];
@@ -44,7 +44,7 @@ const NavBar = () => {
             href="https://www.upwork.com/freelancers/~01554cc98ccc5eb306"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-white bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-medium rounded-3xl text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="text-white bg-gradient-to-r from-purple-500 via-pink-600 to-orange-400 font-medium rounded-3xl text-sm px-4 py-2 h-full items-center text-center mr-3 md:mr-0"
           >
             Hire me
           </a>

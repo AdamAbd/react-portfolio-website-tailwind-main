@@ -15,7 +15,7 @@ const Home = () => {
           <img
             src={avatar}
             alt="Avatar Adam"
-            className="w-56 h-56 rounded-full object-cover bg-[#F0F2F5]"
+            className="w-44 md:w-52 h-44 md:h-52 rounded-full object-cover bg-[#F0F2F5]"
           />
           {/* image & content */}
           {/* text */}
@@ -26,8 +26,8 @@ const Home = () => {
             fullstack developer based in Indonesia.
           </h1>
           <p className="md:w-[500px] text-center">
-            Freelance UI designer, Fullstack developer, & Data Miner. I create
-            seamless web experiences for end-users.
+            Flutter Developer, Web Developer with React, Laravel Developer & UX
+            Designer. I create seamless UX for end-users.
           </p>
           <div className="mt-7 flex flex-row gap-5">
             <a
