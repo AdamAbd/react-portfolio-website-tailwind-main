@@ -21,9 +21,10 @@ const NavBar = () => {
   }, []);
 
   let links = [
-    { name: "About", link: "about" },
-    { name: "Projects", link: "projects" },
-    { name: "Contact", link: "contact" },
+    { name: "About", link: "#about" },
+    { name: "Projects", link: "#projects" },
+    { name: "Blogs", link: "#blogs" },
+    { name: "Contact", link: "#contact" },
   ];
 
   return (
@@ -34,7 +35,7 @@ const NavBar = () => {
     >
       <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
         <a
-          href="https://flowbite.com/"
+          href="#"
           className="text-2xl font-semibold whitespace-nowrap text-white"
         >
           Adam Abd.
@@ -84,7 +85,7 @@ const NavBar = () => {
                   className="w-full md:w-auto bg-transparent border border-[#F0F2F5] md:border-none rounded-3xl py-2"
                 >
                   <a
-                    href="#"
+                    href={data.link}
                     className="block text-[#F0F2F5] text-center"
                     aria-current="page"
                   >

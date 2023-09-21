@@ -29,7 +29,7 @@ const services = [
 
 function About() {
   return (
-    <div className="container mx-auto my-16" id="about">
+    <section id="about" className="container mx-auto my-16">
       <div className="flex flex-col md:flex-row gap-10">
         <img
           src={adam}
@@ -72,7 +72,7 @@ function About() {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

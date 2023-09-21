@@ -4,7 +4,7 @@ import ParticleBg from "./ParticleBg";
 
 const Home = () => {
   return (
-    <div className="relative flex justify-center items-center h-screen">
+    <section className="relative flex justify-center items-center h-screen">
       <ParticleBg />
       <div
         className="absolute z-20 container mx-auto items-center flex text-white h-screen"
@@ -44,7 +44,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

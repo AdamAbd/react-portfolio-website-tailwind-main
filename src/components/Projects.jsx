@@ -51,7 +51,7 @@ const Projects = () => {
     },
   ];
   return (
-    <div className="container mx-auto my-16" id="projects">
+    <section id="projects" className="container mx-auto my-16">
       <Title title="Projects." />
 
       {/* featured projects */}
@@ -94,7 +94,7 @@ const Projects = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

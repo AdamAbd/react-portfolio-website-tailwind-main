@@ -6,7 +6,7 @@ import email from "../assets/socials/sms.png";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto py-6 md:py-10">
+    <section id="contact" className="container mx-auto py-6 md:py-10">
       <div className="bg-[#1C1C22] p-6 md:px-10 rounded-2xl flex flex-col">
         <div className="flex flex-row md:flex-row gap-6 justify-between items-center">
           <p className="text-[#F0F2F5] text-sm">© Develope by Adam Abd.</p>
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

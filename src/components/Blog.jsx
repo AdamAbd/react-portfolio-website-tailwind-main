@@ -43,7 +43,7 @@ function Blog() {
   const carouselRef = useRef(null);
 
   return (
-    <div className="container mx-auto">
+    <section id="blogs" className="container mx-auto">
       <div className="flex flex-row justify-between items-center">
         <Title title={"Blogs."} />
         <div className="flex flex-row gap-2">
@@ -108,7 +108,7 @@ function Blog() {
               />
               <div className="flex flex-col px-2 pt-3 pb-5 gap-2">
                 <a
-                  href="https://www.linkedin.com/in/joshua-harris-321a24190/"
+                  href={`https://blog.adamabd.my.id?title=${data.title}`}
                   target="_blank"
                   rel="noreferrer"
                   className="text-lg font-medium text-white hover:underline"
@@ -132,7 +132,7 @@ function Blog() {
           );
         })}
       </Carousel>
-    </div>
+    </section>
   );
 }
 
