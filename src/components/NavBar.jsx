@@ -35,7 +35,7 @@ const NavBar = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between py-4">
         <a
           href="https://flowbite.com/"
-          className="text-2xl font-semibold whitespace-nowrap dark:text-white"
+          className="text-2xl font-semibold whitespace-nowrap text-white"
         >
           Adam Abd.
         </a>
